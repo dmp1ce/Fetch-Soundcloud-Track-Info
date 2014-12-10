@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Soundcloud track test</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="group">
+      <strong>Soundcloud URL:</strong>
+      <div class="input-group">
+        <input class="form-control" type="text" name="url" />
+      </div>
+    </div>
+    <div class="group">
+      <strong>Client ID:</strong>
+      <div class="input-group">
+        <input class="form-control" type="text" name="id" />
+      </div>
+    </div>
+
+    <button id="fetch" type="submit" class="btn btn-default">Fetch Info</button>
+
+    <pre id="output"></pre>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/moappi/jquery.json2html/7f206bdf1b8b675aa0323f6f59714c19f19ded3a/jquery.json2html.js"></script>
+  <script src="fetch_soundcloud_info.js"></script>
+</body>
